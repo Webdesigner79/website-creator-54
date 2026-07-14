@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — Владимир | Веб-разработчик</title>
+    <!-- Подключаем ЕДИНЫЙ файл стилей -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ШАПКА (Та же самая) -->
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">website creator 54</a>
+
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="about.html" class="nav-link">Обо мне</a>
+                <a href="portfolio.html" class="nav-link">Портфолио</a>
+                <a href="contacts.html" class="nav-link active">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ОСНОВНОЙ КОНТЕНТ -->
+    <main class="container">
+
+        <!-- Блок приветствия -->
+        <section class="hero">
+            <h1>Связаться со мной</h1>
+            <p>Готов обсудить ваш проект, ответить на вопросы или просто поболтать про код. Выберите удобный способ
+                связи ниже.</p>
+        </section>
+
+        <!-- Блок с вариантами связи и формой -->
+        <section class="projects-section">
+            <div class="contact-wrapper">
+
+                <!-- Левая колонка: быстрые ссылки -->
+                <div class="contact-methods">
+                    <h2>Быстрый контакт</h2>
+                    <div class="contact-items-grid">
+
+                        <div class="project-card">
+                            <div style="font-size: 2.5rem; color: var(--accent); margin-bottom: 15px;">📱</div>
+                            <h3>Телефон</h3>
+                            <p style="color: var(--text-muted);">+7 (952) 909-30-65</p>
+                        </div>
+
+                        <div class="project-card">
+                            <div style="font-size: 2.5rem; color: var(--accent); margin-bottom: 15px;">✉️</div>
+                            <h3>Email</h3>
+                            <p style="color: var(--text-muted);">netChalin@yandex.ru</p>
+                        </div>
+
+                        <!-- Блок контактов: Max (кликабельный) -->
+                        <a href="https://max.ru/u/f9LHodD0cOIS3U2zTotCFXKCjEqS4Xgmo_I3e-CbAMzNwvVAYD7a8TsS0zg"
+                            target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
+                            <div class="project-card">
+                                <!-- SVG ЛОГОТИП MAX -->
+                                <div
+                                    style="font-size: 2.5rem; margin-bottom: 15px; display: flex; justify-content: center;">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="48" height="48" rx="12" fill="#1A1A1A" stroke="var(--accent)"
+                                            stroke-width="2" />
+                                        <path d="M14 24L22 32L34 20" stroke="#FFFFFF" stroke-width="4"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+
+                                <h3>Max</h3>
+                                <p style="color: var(--text-muted);">Владимир</p>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <!-- Правая колонка: форма обратной связи -->
+                    <div class="contact-form-wrapper">
+                        <h2>Написать сообщение</h2>
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name"
+                                    style="color: var(--text-main); margin-bottom: 8px; display: block;">Ваше
+                                    имя</label>
+                                <input type="text" id="name" placeholder="Иван Иванов" required style="width: 100%;">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email"
+                                    style="color: var(--text-main); margin-bottom: 8px; display: block;">Email для
+                                    ответа</label>
+                                <input type="email" id="email" placeholder="example@mail.com" required
+                                    style="width: 100%;">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message"
+                                    style="color: var(--text-main); margin-bottom: 8px; display: block;">Сообщение</label>
+                                <textarea id="message" rows="5" placeholder="Расскажите о своем проекте..."
+                                    style="width: 100%; resize: vertical;"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary"
+                                style="width: 100%; margin-top: 10px;">Отправить
+                                заявку</button>
+                        </form>
+                    </div>
+
+                </div>
+        </section>
+
+    </main>
+
+    <!-- ПОДВАЛ (Тот же самый) -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 website creator 54. Все права защищены.</p>
+        </div>
+    </footer>
+    <script>
+        const form = document.querySelector('form'); // Находим форму
+
+        if (form) {
+            form.addEventListener('submit', function (e) {
+                e.preventDefault(); // Останавливаем стандартную отправку
+
+                // Имитация отправки (можно добавить setTimeout для эффекта "загрузки")
+                alert('Спасибо! Ваша заявка принята. Я свяжусь с вами в ближайшее время.');
+
+                // Очищаем форму
+                form.reset();
+            });
+        }
+    </script>
+
+</body>
+
+</html>

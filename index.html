@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная — Владимир | Веб-разработчик</title>
+    <!-- Подключаем стили -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ШАПКА САЙТА -->
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">website creator 54</a>
+
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link active">Главная</a>
+                <a href="about.html" class="nav-link">Обо мне</a>
+                <a href="portfolio.html" class="nav-link">Портфолио</a>
+                <a href="contacts.html" class="nav-link">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ОСНОВНОЙ КОНТЕНТ -->
+    <main class="container">
+
+        <!-- Блок приветствия (Hero Section) -->
+        <section class="hero">
+            <h1>Привет, я Владимир!</h1>
+            <p>Я создаю современные и быстрые сайты. Люблю чистый код и минималистичный дизайн.</p>
+            <a href="contacts.html" class="btn btn-primary">Обсудить проект</a>
+        </section>
+
+        <!-- Блок с примерами работ -->
+        <section class="projects-section">
+            <h2>Мои последние работы</h2>
+            <div class="projects-grid">
+
+                <!-- Карточка проекта 1 -->
+                <article class="project-card">
+                    <!-- ВАЖНО: src указывает путь к твоей картинке -->
+                    <img src="images/project1.jpg" alt="Лендинг кофейни" class="project-img">
+                    <div class="project-info">
+                        <h3>Лендинг для кофейни</h3>
+                        <p>Адаптивная верстка, анимация появления элементов.</p>
+                        <a href="portfolio.html" class="btn btn-secondary">Смотреть проект</a>
+                    </div>
+                </article>
+
+                <!-- Карточка проекта 2 -->
+                <article class="project-card">
+                    <!-- Заглушка, если второй картинки пока нет -->
+                    <img src="images/project2.jpg" alt="Магазин женской одежды" class="project-img">
+                    <div class="project-info">
+                        <h3>Интернет-магазин (MVP)</h3>
+                        <p>Каталог товаров, корзина, фильтрация по категориям.</p>
+                        <a href="portfolio.html" class="btn btn-secondary">Смотреть проект</a>
+                    </div>
+                </article>
+
+                <!-- Карточка проекта 3 -->
+                <article class="project-card">
+                    <img src="images/project3.jpg" alt="Магазин женской одежды" class="project-img">
+                    <div class="project-info">
+                        <h3>Портфолио фотографа</h3>
+                        <p>Авторизация, профиль, история заказов, темная тема.</p>
+                        <a href="portfolio.html" class="btn btn-secondary">Смотреть проект</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ПОДВАЛ -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 website creator 54. Все права защищены.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
