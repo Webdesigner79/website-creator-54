@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обо мне — Владимир | Веб-разработчик</title>
+    <!-- Подключаем ЕДИНЫЙ файл стилей -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ШАПКА (Та же самая, что и на главной) -->
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">website creator 54</a>
+
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="about.html" class="nav-link active">Обо мне</a>
+                <a href="portfolio.html" class="nav-link">Портфолио</a>
+                <a href="contacts.html" class="nav-link">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ОСНОВНОЙ КОНТЕНТ -->
+    <main class="container">
+
+        <!-- Блок приветствия (Hero Section) -->
+        <section class="hero">
+            <h1>Кто я такой?</h1>
+            <p>Привет! Я Владимир, начинающий веб-разработчик. Сейчас я активно изучаю HTML, CSS и JavaScript, чтобы
+                создавать удобные и красивые интерфейсы.</p>
+            <p>Мой подход к работе: сначала чистая структура (HTML), потом идеальный стиль (CSS), и только потом —
+                логика (JS). Люблю минимализм и скорость загрузки.</p>
+
+            <div style="margin-top: 30px;">
+                <a href="contacts.html" class="btn btn-primary">Хочу заказать сайт</a>
+                <a href="portfolio.html" class="btn btn-secondary" style="margin-left: 15px;">Посмотреть работы</a>
+            </div>
+        </section>
+
+        <!-- Блок с навыками (Сетка) -->
+        <section class="projects-section">
+            <h2>Что я уже умею</h2>
+            <div class="projects-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+
+                <!-- Навык 1 -->
+                <div class="project-card" style="border: none; background: transparent;">
+                    <div style="font-size: 3rem; color: var(--accent); margin-bottom: 15px;">&lt;/&gt;</div>
+                    <h3>HTML5 & CSS3</h3>
+                    <p style="color: var(--text-muted);">Верстаю адаптивные сайты, работаю с Flexbox и Grid, понимаю
+                        семантику.</p>
+                </div>
+
+                <!-- Навык 2 -->
+                <div class="project-card" style="border: none; background: transparent;">
+                    <div style="font-size: 3rem; color: var(--accent); margin-bottom: 15px;">⚡</div>
+                    <h3>Скорость и Оптимизация</h3>
+                    <p style="color: var(--text-muted);">Умею оптимизировать изображения и код, чтобы сайт грузился
+                        мгновенно.</p>
+                </div>
+
+                <!-- Навык 3 -->
+                <div class="project-card" style="border: none; background: transparent;">
+                    <div style="font-size: 3rem; color: var(--accent); margin-bottom: 15px;">🧠</div>
+                    <h3>Логика и Обучение</h3>
+                    <p style="color: var(--text-muted);">Постоянно учусь новому, читаю документацию и не боюсь сложных
+                        задач.</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ПОДВАЛ (Та же самая, что и на главной) -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 website creator 54. Все права защищены.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

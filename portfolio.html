@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио — Владимир | Веб-разработчик</title>
+    <!-- Подключаем ЕДИНЫЙ файл стилей -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ШАПКА (Та же самая) -->
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">website creator 54</a>
+
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="about.html" class="nav-link">Обо мне</a>
+                <a href="portfolio.html" class="nav-link active">Портфолио</a>
+                <a href="contacts.html" class="nav-link">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ОСНОВНОЙ КОНТЕНТ -->
+    <main class="container">
+
+        <!-- Заголовок секции -->
+        <section class="hero" style="text-align: left; padding-bottom: 40px;">
+            <h1>Мои проекты</h1>
+            <p style="max-width: 500px;">Здесь собраны мои лучшие работы: от простых лендингов до сложных адаптивных
+                страниц. Каждый проект — это опыт и новые навыки.</p>
+        </section>
+
+        <!-- СЕТКА ПРОЕКТОВ -->
+        <section class="projects-section">
+            <div class="projects-grid">
+
+                <!-- Проект 1 -->
+                <article class="project-card">
+                    <!-- ВАЖНО: Замени bg-photo.jpg на реальную картинку своего проекта, например work-1.jpg -->
+                    <img src="images/bg-photo.jpg" alt="Лендинг кофейни" class="project-img">
+                    <div class="project-info">
+                        <h3>Лендинг кофейни</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 20px;">Адаптивная верстка, плавные анимации,
+                            работа с типографикой.</p>
+                        <a href="#" class="btn btn-secondary">Смотреть проект</a>
+                    </div>
+                </article>
+
+                <!-- Проект 2 -->
+                <article class="project-card">
+                    <!-- Если картинки пока нет, можно оставить заглушку или удалить этот блок -->
+                    <div class="project-img-placeholder">Проект 2</div>
+                    <div class="project-info">
+                        <h3>Интернет-магазин (MVP)</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 20px;">Каталог товаров, сетка карточек,
+                            адаптивная верстка.</p>
+                        <a href="#" class="btn btn-secondary">Смотреть проект</a>
+                    </div>
+                </article>
+
+                <!-- Проект 3 -->
+                <article class="project-card">
+                    <div class="project-img-placeholder">Проект 3</div>
+                    <div class="project-info">
+                        <h3>Личный кабинет</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 20px;">Сложная структура, формы авторизации,
+                            темная тема.</p>
+                        <a href="#" class="btn btn-secondary">Смотреть проект</a>
+                    </div>
+                </article>
+
+                <!-- Проект 4 (Пример для заполнения) -->
+                <article class="project-card">
+                    <div class="project-img-placeholder">Проект 4</div>
+                    <div class="project-info">
+                        <h3>Сайт-визитка</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 20px;">Минималистичный дизайн, быстрая
+                            загрузка, семантическая верстка.</p>
+                        <a href="#" class="btn btn-secondary">Смотреть проект</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ПОДВАЛ (Тот же самый) -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 website creator 54. Все права защищены.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
